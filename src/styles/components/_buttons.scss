@@ -5,14 +5,17 @@
     font-family:'Space Mono', monospace;
     font-weight: 700;
     font-size: 1.5rem;
-    width: 7.5rem;
+    width:calc((100% / 3) - 16px);
     height: 3rem;
     flex-wrap: wrap;
+    outline:none;
+    margin: .5rem;
 }
 
 .btn-darkgreen{
     background-color: #00474B;
     color: white;
+    transition: 400ms !important;
     &:hover{
         background-color: #9FE8DF;
         color: #004F4C;
@@ -20,6 +23,7 @@
 }
 
 .btn-lightgreen{
+    transition: 400ms !important;
     background-color: #26C2AD;
     color: #00474b;
     height: 3rem;
@@ -38,11 +42,18 @@
 .btn-active{
     background-color:#26C2AD;
     color: #004F4C;
+    cursor:auto;
+    &:hover{
+
+        cursor:auto;
+    }
 }
 
 .btn-disable{
     background-color: #0D686D;
+    cursor:auto;
     &:hover{
         background-color: #0D686D;
+        cursor:auto;
     }
 }

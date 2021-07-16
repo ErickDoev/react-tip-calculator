@@ -12,7 +12,7 @@ export const TipAmount = () => {
         <>
 
             <div className="container-col flex p25">
-                <div className="container-row flex">
+                <div className="container-row flex mb43">
                     <div className="container-col">
                         <h2>Tip Amount</h2>
                         <p className="text3 lightgreen">/ person</p>

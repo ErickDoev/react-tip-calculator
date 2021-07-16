@@ -8,9 +8,9 @@ import { TipButtons } from './TipButtons'
 
 const initialState = {
     bill:'',
-    tip:15,
+    tip:0,
     buttons:[5,10,15,25,50],
-    people:1,
+    people:'',
     custom:''
 }
 export const CalculatorScreen = () => {
@@ -21,13 +21,13 @@ export const CalculatorScreen = () => {
         <TipContext.Provider value={{tipAmount,setTipAmount,initialState}}>
             <div className="container-row p20 bg-white br1 contaier-main">
 
-                <div className="flex container-col container-content-spacebetween mr25">
+                <div className="container-col calculator ">
                         <BillInput />
                         <TipButtons />
                         <PeopleInput />
                 </div>
 
-                <div className="flex container-col bg-dark-green br1 container-content-spacebetween">
+                <div className="container-col calculator-inputs bg-dark-green br1 ">
                     <TipAmount />
                 </div>
             </div>

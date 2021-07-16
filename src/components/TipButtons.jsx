@@ -7,8 +7,10 @@ export const TipButtons = () => {
 
     const handleSelectTip = (tip) => {
 
+        
         setTipAmount({
             ...tipAmount,
+            custom:'',
             tip
         })
 
@@ -32,29 +34,32 @@ export const TipButtons = () => {
 
     return (
 
-        <div>
+        <div className="container-grid">
             <h3>Select Tip %</h3>
             {
                 buttons.map( b => (b === tip)
                     ?<button 
-                        className="btn btn-darkgreen mb43 flex-btn mr43 btn-active" 
+                        className="btn btn-darkgreen flex-btn btn-active" 
                         disabled key={b}
                         onClick={()=>{handleSelectTip(b)}}>{b} %
                     </button>
                     :<button 
-                        className="btn btn-darkgreen mb43 flex-btn mr43" 
+                        className="btn btn-darkgreen flex-btn" 
                         onClick={()=>{handleSelectTip(b)}} 
                         key={b}>{b} %
                     </button> 
                 )
             }
+
+            
             <input 
-                className="input flex btn" 
+                className="input input__hover flex btn" 
                 type="number"
                 value={custom}
                 name="custom"
                 placeholder="Custom"
                 onChange={changeCustomTip}/>
+                
         </div>
     )
 }

@@ -17,6 +17,19 @@
 
 }
 
+.input__hover{
+    border: 2px solid #F3F8FB !important;
+    border-radius: 5px;
+    transition: 400ms !important;
+    
+    padding: .7rem;
+    &:hover{
+        border: 2px solid #5CA99F !important;
+        border-radius: 5px;
+        transition: 400ms;
+    }
+}
+
 .input{
     color: #07423C;
     text-align: end;
@@ -37,12 +50,9 @@
         background-color: #F3F8FB;
         font-family:'Space Mono', monospace;
         font-weight: 400;
-        appearance: none;
         
     }
-    &:hover{
-        appearance: none;
-    }
+
 }
 
 .input-bloqued{
