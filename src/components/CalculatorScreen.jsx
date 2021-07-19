@@ -9,7 +9,7 @@ import { TipButtons } from './TipButtons'
 const initialState = {
     bill:'',
     tip:0,
-    people:'',
+    people:1,
     custom:''
 }
 export const CalculatorScreen = () => {
