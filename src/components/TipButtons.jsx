@@ -1,13 +1,15 @@
 import React, { useContext} from 'react'
 import { TipContext } from '../context/TipContext'
 
+
+
 export const TipButtons = () => {
     const {setTipAmount,tipAmount} = useContext(TipContext);
-    const{tip,buttons,custom} = tipAmount;
+    const{tip,custom} = tipAmount;
+    const buttons = [5,10,15,25,50];
 
     const handleSelectTip = (tip) => {
-
-        
+       
         setTipAmount({
             ...tipAmount,
             custom:'',

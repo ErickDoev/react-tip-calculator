@@ -9,7 +9,6 @@ import { TipButtons } from './TipButtons'
 const initialState = {
     bill:'',
     tip:0,
-    buttons:[5,10,15,25,50],
     people:'',
     custom:''
 }
